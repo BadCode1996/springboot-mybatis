@@ -1,0 +1,13 @@
+server:
+  port: 8082
+
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/ssm?serverTimezone=UTC
+    username: root
+    password: admin
+
+mybatis:
+  type-aliases-package: com.code.sbmdemo.bean
+  not-empty: false
+  identity: MYSQL

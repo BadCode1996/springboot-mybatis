@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC
+        "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.code.mybatis.mapper.CustomerMapper">
+
+    <insert id="saveCustomer" parameterType="com.code.mybatis.bean.Customer">
+        INSERT INTO customer(
+        name, gender, telephone, address)
+        VALUES
+        ( #{name}, #{gender}, #{telephone}, #{address});
+    </insert>
+
+    <select id="queryAll" resultType="com.code.mybatis.bean.Customer">
+        select * from customer
+    </select>
+
+</mapper>

@@ -1,3 +1,5 @@
+源文档地址：https://blog.badcode.icu/posts/20090801.html
+
 # springboot-mybatis
 SpringBoot整合Mybatis。使用了3中方式：xml配置文件，注解配置，通用mapper配置
 

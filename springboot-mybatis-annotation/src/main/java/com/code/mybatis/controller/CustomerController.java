@@ -23,12 +23,7 @@ public class CustomerController {
 
     @GetMapping("list")
     public List<Customer> queryAll(){
-        List<Customer> customers = customerService.queryAll();
-        customers.forEach(customer -> {
-            System.out.print(customer.getId() + "\t");
-            System.out.println(customer.getGender());
-        });
-        return customers;
+        return customerService.queryAll();
     }
 
     @PostMapping("save")
